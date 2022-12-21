@@ -36,7 +36,12 @@ public class Main<count> {
         System.out.println("Количество разных букв во всех строках " +
                 list.stream().flatMapToInt(String::chars).distinct().count());
 
-        
+        Office office = new Office();
+        Office[] staff = new Office[4];
+        staff[0] = new Office("Vaso","Jordan",15,2018);
+        staff[1] = new Office("Fedor","Bobsten",15,2018);
+        staff[2] = new Office("Karl","Jakson",15,2018);
+        staff[3] = new Office("Bob","Killian",15,2018);
 
     }
 }
